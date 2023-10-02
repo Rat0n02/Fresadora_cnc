@@ -1,6 +1,7 @@
 from PySide6.QtWidgets import*
 from PySide6.QtCore import*
-from _feature_ import  snake_case,true_property
+from _feature_ import snake_case,true_property
+
 class myFirtsWindow(QMainWindow):
     def setup_ui(self):
         self.set_fixed_Size (600,440)
@@ -14,7 +15,7 @@ class myFirtsWindow(QMainWindow):
         self.titulo.text = 'MAQUINA_FRESADORA_CNC'
         self.titulo.geometry = QRect(0,0,580,20)
         self.titulo.alignment = Qt.AlignmentCenter
-        self.titulo.style_sheet
+        self.titulo.style_sheet''''''
 
         self.frame2 = QFrame(self)
         self.frame2.geometry = QRect(10,120,580,310)
@@ -31,4 +32,3 @@ window = myFirtsWindow()
 window.setup_ui()
 window.show()
 
-6
