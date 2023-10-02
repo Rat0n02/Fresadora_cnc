@@ -24,6 +24,7 @@ class myFirtsWindow(QMainWindow):
         self.fr_inputs = QFrame(self)
         self.fr_inputs.geometry = QRect(145,340,290,80)
         self.fr_inputs.style_sheet = "background: #F5070F;"
+3312
 
 import sys
 app = QApplication(sys.argv)
