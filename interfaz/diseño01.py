@@ -1,39 +1,51 @@
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
+from PyQt5.QtWidgets import *
 import sys
 
-from PyQt5.QtCore import QPropertyAnimation, QEasingCurve
-from PyQt5.QtGui import QColor
-from PyQt5.QtWidgets import QApplication,QMainWindow,QGraphicsDropShadowEffect
-from PyQt5.uic import loadUi
-
-
-class VentanaPrincipal(QMainWindow):
+class VentanaPrincipal(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(838, 690)
+
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
-        self.centralwidget.setStyleSheet(u"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(245, 224, 176, 255), stop:0.09 rgba(246, 189, 237, 255), stop:0.14 rgba(194, 207, 246, 255), stop:0.19 rgba(184, 160, 168, 255), stop:0.25 rgba(171, 186, 248, 255), stop:0.32 rgba(243, 248, 224, 255), stop:0.385 rgba(249, 162, 183, 255), stop:0.47 rgba(100, 115, 124, 255), stop:0.58 rgba(251, 205, 202, 255), stop:0.65 rgba(170, 128, 185, 255), stop:0.75 rgba(252, 222, 204, 255), stop:0.805 rgba(206, 122, 218, 255), stop:0.86 rgba(254, 223, 175, 255), stop:0.91 rgba(254, 236, 244, 255), stop:1 rgba(255, 191, 221, 255));")
+        self.centralwidget.setStyleSheet(u"background-color:"
+                                         u" qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, "
+                                         u"stop:0 rgba(245, 224, 176, 255), stop:0.09 rgba(246, 189, 237, 255), "
+                                         u"stop:0.14 rgba(194, 207, 246, 255), stop:0.19 rgba(184, 160, 168, 255), "
+                                         u"stop:0.25 rgba(171, 186, 248, 255), stop:0.32 rgba(243, 248, 224, 255), "
+                                         u"stop:0.385 rgba(249, 162, 183, 255), stop:0.47 rgba(100, 115, 124, 255), "
+                                         u"stop:0.58 rgba(251, 205, 202, 255), stop:0.65 rgba(170, 128, 185, 255),"
+                                         u" stop:0.75 rgba(252, 222, 204, 255), stop:0.805 rgba(206, 122, 218, 255),"
+                                         u" stop:0.86 rgba(254, 223, 175, 255), stop:0.91 rgba(254, 236, 244, 255), "
+                                         u"stop:1 rgba(255, 191, 221, 255));")
         self.verticalLayout = QVBoxLayout(self.centralwidget)
         self.verticalLayout.setSpacing(0)
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
+
         self.frame = QFrame(self.centralwidget)
         self.frame.setObjectName(u"frame")
         self.frame.setFrameShape(QFrame.StyledPanel)
         self.frame.setFrameShadow(QFrame.Raised)
+
         self.verticalLayout_2 = QVBoxLayout(self.frame)
         self.verticalLayout_2.setSpacing(0)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
+
         self.frame_superior = QFrame(self.frame)
         self.frame_superior.setObjectName(u"frame_superior")
         self.frame_superior.setMaximumSize(QSize(16777215, 40))
         self.frame_superior.setStyleSheet(u"background-color: rgb(172, 53, 164);")
         self.frame_superior.setFrameShape(QFrame.StyledPanel)
         self.frame_superior.setFrameShadow(QFrame.Raised)
+
         self.horizontalLayout = QHBoxLayout(self.frame_superior)
         self.horizontalLayout.setObjectName(u"horizontalLayout")
+
         self.label_MENU = QLabel(self.frame_superior)
         self.label_MENU.setObjectName(u"label_MENU")
         font = QFont()
@@ -314,6 +326,10 @@ class VentanaPrincipal(QMainWindow):
     # retranslateUi
 
 
+class Ventana(QMainWindow,):
+    def __init__(self):
+        super().__init__()
+        self.resize(300, 200)
 
 
 if __name__ == "__main__":
@@ -321,5 +337,3 @@ if __name__ == "__main__":
     mi_app = VentanaPrincipal()
     mi_app.show()
     sys.exit(app.exec_())
-
-
