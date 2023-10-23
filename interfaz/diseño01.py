@@ -2,11 +2,17 @@ from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 import sys
+from PyQt5.uic import loadUi
 
-class VentanaPrincipal(object):
+class VentanaPrincipal(QMainWindow):
+     def __init__(self):
+         super(VentanaPrincipal,self).__init__()
+         loadUi("diseño01.ui",self)
+
+class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
-            MainWindow.setObjectName(u"MainWindow")
+            MainWindow.setObjectName("MainWindow")
         MainWindow.resize(838, 690)
 
         self.centralwidget = QWidget(MainWindow)
