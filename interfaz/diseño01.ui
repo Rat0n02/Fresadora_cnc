@@ -110,7 +110,7 @@ bord: rgb(1, 227, 252);</string>
            </spacer>
           </item>
           <item>
-           <widget class="QPushButton" name="bt_bajar">
+           <widget class="QPushButton" name="bt_minimizar">
             <property name="styleSheet">
              <string notr="true">background-color:rgb(255, 170, 255)</string>
             </property>
@@ -124,7 +124,7 @@ bord: rgb(1, 227, 252);</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="bt_minimizar">
+           <widget class="QPushButton" name="bt_restaurar">
             <property name="styleSheet">
              <string notr="true">background-color:rgb(255, 170, 255)</string>
             </property>
@@ -133,7 +133,7 @@ bord: rgb(1, 227, 252);</string>
             </property>
             <property name="icon">
              <iconset>
-              <normaloff>imagenes/minimizar.svg</normaloff>imagenes/minimizar.svg</iconset>
+              <normaloff>imagenes/maximizar.svg</normaloff>imagenes/maximizar.svg</iconset>
             </property>
            </widget>
           </item>
@@ -147,7 +147,7 @@ bord: rgb(1, 227, 252);</string>
             </property>
             <property name="icon">
              <iconset>
-              <normaloff>imagenes/maximizar.svg</normaloff>imagenes/maximizar.svg</iconset>
+              <normaloff>imagenes/minimizar.svg</normaloff>imagenes/minimizar.svg</iconset>
             </property>
            </widget>
           </item>
@@ -411,7 +411,7 @@ background-color: rgb(97, 252, 242);</string>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="pushButton_12">
+                 <widget class="QPushButton" name="pushButton_11">
                   <property name="styleSheet">
                    <string notr="true">background-color: rgb(169, 235, 255);</string>
                   </property>
@@ -456,18 +456,18 @@ color: rgb(0, 0, 0);
 }</string>
                   </property>
                   <property name="currentIndex">
-                   <number>1</number>
+                   <number>2</number>
                   </property>
                   <property name="tabSpacing">
                    <number>7</number>
                   </property>
-                  <widget class="QWidget" name="">
+                  <widget class="QWidget" name="pagina_uno">
                    <property name="geometry">
                     <rect>
                      <x>0</x>
                      <y>0</y>
                      <width>589</width>
-                     <height>491</height>
+                     <height>457</height>
                     </rect>
                    </property>
                    <attribute name="icon">
@@ -477,19 +477,47 @@ color: rgb(0, 0, 0);
                    <attribute name="label">
                     <string>Archivos</string>
                    </attribute>
+                   <layout class="QVBoxLayout" name="verticalLayout_4">
+                    <item>
+                     <widget class="QWidget" name="widget_2" native="true"/>
+                    </item>
+                   </layout>
                   </widget>
-                  <widget class="QWidget" name="page_2">
+                  <widget class="QWidget" name="pagina_dos">
                    <property name="geometry">
                     <rect>
                      <x>0</x>
                      <y>0</y>
                      <width>589</width>
-                     <height>491</height>
+                     <height>457</height>
                     </rect>
                    </property>
-                   <attribute name="label">
-                    <string>carga</string>
+                   <attribute name="icon">
+                    <iconset>
+                     <normaloff>imagenes/psyduck_icon-icons.com_67509.svg</normaloff>imagenes/psyduck_icon-icons.com_67509.svg</iconset>
                    </attribute>
+                   <attribute name="label">
+                    <string>Carando</string>
+                   </attribute>
+                   <layout class="QVBoxLayout" name="verticalLayout_5">
+                    <item>
+                     <widget class="QWidget" name="widget" native="true"/>
+                    </item>
+                   </layout>
+                  </widget>
+                  <widget class="QWidget" name="pagina_tres">
+                   <attribute name="icon">
+                    <iconset>
+                     <normaloff>imagenes/pikachu_icon-icons.com_67535.svg</normaloff>imagenes/pikachu_icon-icons.com_67535.svg</iconset>
+                   </attribute>
+                   <attribute name="label">
+                    <string>Cancelando</string>
+                   </attribute>
+                   <layout class="QVBoxLayout" name="verticalLayout_6">
+                    <item>
+                     <widget class="QWidget" name="widget_3" native="true"/>
+                    </item>
+                   </layout>
                   </widget>
                  </widget>
                 </item>
