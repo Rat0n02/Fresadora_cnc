@@ -17,7 +17,7 @@
    <property name="styleSheet">
     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(245, 224, 176, 255), stop:0.09 rgba(246, 189, 237, 255), stop:0.14 rgba(194, 207, 246, 255), stop:0.19 rgba(184, 160, 168, 255), stop:0.25 rgba(171, 186, 248, 255), stop:0.32 rgba(243, 248, 224, 255), stop:0.385 rgba(249, 162, 183, 255), stop:0.47 rgba(100, 115, 124, 255), stop:0.58 rgba(251, 205, 202, 255), stop:0.65 rgba(170, 128, 185, 255), stop:0.75 rgba(252, 222, 204, 255), stop:0.805 rgba(206, 122, 218, 255), stop:0.86 rgba(254, 223, 175, 255), stop:0.91 rgba(254, 236, 244, 255), stop:1 rgba(255, 191, 221, 255));</string>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
+   <layout class="QHBoxLayout" name="horizontalLayout_5">
     <property name="spacing">
      <number>0</number>
     </property>
@@ -77,6 +77,9 @@
          <layout class="QHBoxLayout" name="horizontalLayout">
           <item>
            <widget class="QLabel" name="label_MENU">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
             <property name="font">
              <font>
               <family>Gill Sans Ultra Bold</family>
@@ -85,6 +88,12 @@
               <italic>false</italic>
               <bold>false</bold>
              </font>
+            </property>
+            <property name="accessibleName">
+             <string notr="true"/>
+            </property>
+            <property name="accessibleDescription">
+             <string notr="true"/>
             </property>
             <property name="styleSheet">
              <string notr="true">font: 14pt &quot;Gill Sans Ultra Bold&quot;;
@@ -152,7 +161,7 @@ bord: rgb(1, 227, 252);</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton">
+           <widget class="QPushButton" name="bt_cerrar">
             <property name="styleSheet">
              <string notr="true">background-color:rgb(255, 170, 255)</string>
             </property>
@@ -196,7 +205,7 @@ bord: rgb(1, 227, 252);</string>
            <number>0</number>
           </property>
           <item>
-           <widget class="QFrame" name="frame_2">
+           <widget class="QFrame" name="menu_lateral">
             <property name="styleSheet">
              <string notr="true">background-color: rgb(246, 158, 252);
 
@@ -456,12 +465,12 @@ color: rgb(0, 0, 0);
 }</string>
                   </property>
                   <property name="currentIndex">
-                   <number>2</number>
+                   <number>1</number>
                   </property>
                   <property name="tabSpacing">
                    <number>7</number>
                   </property>
-                  <widget class="QWidget" name="pagina_uno">
+                  <widget class="QWidget" name="page_uno">
                    <property name="geometry">
                     <rect>
                      <x>0</x>
@@ -477,13 +486,9 @@ color: rgb(0, 0, 0);
                    <attribute name="label">
                     <string>Archivos</string>
                    </attribute>
-                   <layout class="QVBoxLayout" name="verticalLayout_4">
-                    <item>
-                     <widget class="QWidget" name="widget_2" native="true"/>
-                    </item>
-                   </layout>
+                   <layout class="QVBoxLayout" name="verticalLayout"/>
                   </widget>
-                  <widget class="QWidget" name="pagina_dos">
+                  <widget class="QWidget" name="page_dos">
                    <property name="geometry">
                     <rect>
                      <x>0</x>
@@ -497,15 +502,30 @@ color: rgb(0, 0, 0);
                      <normaloff>imagenes/psyduck_icon-icons.com_67509.svg</normaloff>imagenes/psyduck_icon-icons.com_67509.svg</iconset>
                    </attribute>
                    <attribute name="label">
-                    <string>Carando</string>
+                    <string>Cargando</string>
                    </attribute>
-                   <layout class="QVBoxLayout" name="verticalLayout_5">
+                   <layout class="QVBoxLayout" name="verticalLayout_4">
                     <item>
-                     <widget class="QWidget" name="widget" native="true"/>
+                     <widget class="QFrame" name="frame_23">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                     </widget>
                     </item>
                    </layout>
                   </widget>
-                  <widget class="QWidget" name="pagina_tres">
+                  <widget class="QWidget" name="page_tres">
+                   <property name="geometry">
+                    <rect>
+                     <x>0</x>
+                     <y>0</y>
+                     <width>589</width>
+                     <height>457</height>
+                    </rect>
+                   </property>
                    <attribute name="icon">
                     <iconset>
                      <normaloff>imagenes/pikachu_icon-icons.com_67535.svg</normaloff>imagenes/pikachu_icon-icons.com_67535.svg</iconset>
@@ -513,11 +533,7 @@ color: rgb(0, 0, 0);
                    <attribute name="label">
                     <string>Cancelando</string>
                    </attribute>
-                   <layout class="QVBoxLayout" name="verticalLayout_6">
-                    <item>
-                     <widget class="QWidget" name="widget_3" native="true"/>
-                    </item>
-                   </layout>
+                   <layout class="QVBoxLayout" name="verticalLayout_6"/>
                   </widget>
                  </widget>
                 </item>
