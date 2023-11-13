@@ -316,24 +316,6 @@ background-color: rgb(248, 110, 64);</string>
                </property>
               </widget>
              </item>
-             <item>
-              <widget class="QPushButton" name="bt_cinco">
-               <property name="styleSheet">
-                <string notr="true">font: 16pt &quot;Bauhaus 93&quot;;
-color: rgb(255, 255, 255);
-background-color: rgb(85, 0, 0);
-
-</string>
-               </property>
-               <property name="text">
-                <string>APAGAR</string>
-               </property>
-               <property name="icon">
-                <iconset>
-                 <normaloff>imagenes/Pokeball_icon-icons.com_67533.svg</normaloff>imagenes/Pokeball_icon-icons.com_67533.svg</iconset>
-               </property>
-              </widget>
-             </item>
             </layout>
            </widget>
           </item>
@@ -465,7 +447,7 @@ color: rgb(0, 0, 0);
 }</string>
                   </property>
                   <property name="currentIndex">
-                   <number>1</number>
+                   <number>2</number>
                   </property>
                   <property name="tabSpacing">
                    <number>7</number>
@@ -506,13 +488,20 @@ color: rgb(0, 0, 0);
                    </attribute>
                    <layout class="QVBoxLayout" name="verticalLayout_4">
                     <item>
-                     <widget class="QFrame" name="frame_23">
-                      <property name="frameShape">
-                       <enum>QFrame::StyledPanel</enum>
-                      </property>
-                      <property name="frameShadow">
-                       <enum>QFrame::Raised</enum>
-                      </property>
+                     <widget class="QWidget" name="widget" native="true">
+                      <widget class="QLabel" name="label_uno">
+                       <property name="geometry">
+                        <rect>
+                         <x>50</x>
+                         <y>50</y>
+                         <width>431</width>
+                         <height>331</height>
+                        </rect>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                      </widget>
                      </widget>
                     </item>
                    </layout>
@@ -533,7 +522,25 @@ color: rgb(0, 0, 0);
                    <attribute name="label">
                     <string>Cancelando</string>
                    </attribute>
-                   <layout class="QVBoxLayout" name="verticalLayout_6"/>
+                   <layout class="QVBoxLayout" name="verticalLayout_6">
+                    <item>
+                     <widget class="QWidget" name="widget_2" native="true">
+                      <widget class="QLabel" name="label_dos">
+                       <property name="geometry">
+                        <rect>
+                         <x>110</x>
+                         <y>40</y>
+                         <width>321</width>
+                         <height>281</height>
+                        </rect>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                      </widget>
+                     </widget>
+                    </item>
+                   </layout>
                   </widget>
                  </widget>
                 </item>
