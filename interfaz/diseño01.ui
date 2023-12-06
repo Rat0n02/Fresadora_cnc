@@ -395,9 +395,11 @@ background-color: rgb(97, 252, 242);</string>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLineEdit" name="lineEdit">
+                 <widget class="QTextBrowser" name="historialTextBrowser">
                   <property name="styleSheet">
-                   <string notr="true">background-color: rgb(255, 255, 255);</string>
+                   <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 12pt &quot;System&quot;;
+color: rgb(172, 53, 164);</string>
                   </property>
                  </widget>
                 </item>
@@ -468,7 +470,49 @@ color: rgb(0, 0, 0);
                    <attribute name="label">
                     <string>Archivos</string>
                    </attribute>
-                   <layout class="QVBoxLayout" name="verticalLayout"/>
+                   <layout class="QVBoxLayout" name="verticalLayout">
+                    <item>
+                     <widget class="QFrame" name="frame_2">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <widget class="QLabel" name="label_tres">
+                       <property name="geometry">
+                        <rect>
+                         <x>50</x>
+                         <y>60</y>
+                         <width>451</width>
+                         <height>271</height>
+                        </rect>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                      </widget>
+                      <widget class="QPushButton" name="bt_seis">
+                       <property name="geometry">
+                        <rect>
+                         <x>180</x>
+                         <y>370</y>
+                         <width>201</width>
+                         <height>51</height>
+                        </rect>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(170, 255, 255);
+font: 12pt &quot;Franklin Gothic Heavy&quot;;
+color: rgb(0, 85, 255);</string>
+                       </property>
+                       <property name="text">
+                        <string>ABRIR APLICACION </string>
+                       </property>
+                      </widget>
+                     </widget>
+                    </item>
+                   </layout>
                   </widget>
                   <widget class="QWidget" name="page_dos">
                    <property name="geometry">
@@ -492,14 +536,32 @@ color: rgb(0, 0, 0);
                       <widget class="QLabel" name="label_uno">
                        <property name="geometry">
                         <rect>
-                         <x>50</x>
-                         <y>50</y>
+                         <x>60</x>
+                         <y>20</y>
                          <width>431</width>
                          <height>331</height>
                         </rect>
                        </property>
                        <property name="text">
                         <string/>
+                       </property>
+                      </widget>
+                      <widget class="QToolButton" name="bt_cinco">
+                       <property name="geometry">
+                        <rect>
+                         <x>170</x>
+                         <y>380</y>
+                         <width>221</width>
+                         <height>51</height>
+                        </rect>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(170, 255, 255);
+font: 87 11pt &quot;Segoe UI Black&quot;;
+color: rgb(0, 85, 255);</string>
+                       </property>
+                       <property name="text">
+                        <string>ABRIR APLICACION </string>
                        </property>
                       </widget>
                      </widget>
@@ -528,10 +590,10 @@ color: rgb(0, 0, 0);
                       <widget class="QLabel" name="label_dos">
                        <property name="geometry">
                         <rect>
-                         <x>110</x>
-                         <y>40</y>
-                         <width>321</width>
-                         <height>281</height>
+                         <x>10</x>
+                         <y>20</y>
+                         <width>541</width>
+                         <height>401</height>
                         </rect>
                        </property>
                        <property name="text">

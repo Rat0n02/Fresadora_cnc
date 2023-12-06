@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="com.willwinder.ugs.platform.ugscore">
+    <module_version install_time="1674752945763" last="true" origin="installer" specification_version="2.0.0.2023.01.26.17.06">
+        <file crc="1497893699" name="config/Modules/com-willwinder-ugs-platform-ugscore.xml"/>
+        <file crc="1343335609" name="modules/com-willwinder-ugs-platform-ugscore.jar"/>
+    </module_version>
+</module>
