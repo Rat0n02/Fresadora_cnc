@@ -1,4 +1,9 @@
 https://github.com/Rat0n02/Fresadora_cnc.git
+EN EL CODIGO ANTERIOR EXISTE UGSPLASTFORM-WIN ese archivo lo descargan para obtener su programa de g code 
+Antes de conectar sus motores al arduino implemente elcodigo y/o librerias de grbl a su arduino o solo copie y pegue el codigo que dice arduino.py 
+
+
+
 
 Introducción: 
 una fresadora CNC es una herramienta fundamental en la fabricación moderna. Esta máquina utiliza programación para esculpir, cortar y dar forma a materiales que e este caso nos centramos en la fabricación de diseños de placas CNC.
@@ -19,6 +24,10 @@ El sistema de la maquina CNC se divide en tres componentes:
 1.software: hace el diseño de PCB mediante un programa de diseño automatizado capaz de generar archivos en formato GRBL. La interfaz del usuario se creo para poder abrir la aplicación que genera el código G que en este caso es Inkscape.
 2- hardware electrónico: conformada por los dispositivos electrónicos como es el Arduino uno, la raspberry pi, cnc shield, motores y los drivers DRV8825.
 3-Estructura mecánica: corresponde a la estructura que esta formada por los ejes y el motor de fresado. La estructura tiene tres ejes de posicionamiento, tres motores paso a paso encargados de cada movimiento de los ejes y la máquina encargada del fresado. 
+DISEÑO EN SOLIDWORKS:
+este paso es muy importante ya que tenemos nuestro dibujo dimensional correspondiente a las medidas , si tu estructura te queda desalineada o descuadrada puedes llegar a tener fallas al momento de correr tu programa.
+![image](https://github.com/Rat0n02/Fresadora_cnc/assets/146589981/c4384ccc-abca-4c0d-86d5-fb2377805dae)
+
 
 INSTRUCCIONES :
 Descripción del proceso de funcionamiento 
@@ -45,7 +54,10 @@ La funcionalidad de nuestra app G-code Universal es mandar la señal y/o orienta
 COMO FUNCIONA LA APLICACIONES:
 VIDEO QUE PUEDE SER DE  TU AYUDA 
 https://www.youtube.com/watch?v=Eou1AIwa6bI&pp=ygUeY29tbyB1c2FyIGlua3NjYXBlICBQQVJBIEdDT0RF 
-generar codigo con las medidascorrespondientes 
+generar codigo con las medidas correspondientes 
+
+PASOS A SEGUIR PARA GENENERAR SUS DISEÑOS Y FUNCIONAMIENTO DE LA FESADORA :
+
 ![image](https://github.com/Rat0n02/Fresadora_cnc/assets/146589981/49b7ece9-f7b0-4de3-9317-8815148556c9)
 
 
